@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  background-color: brown;
+  width: 100px;
+  height: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+}
