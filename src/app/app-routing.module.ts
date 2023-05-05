@@ -19,6 +19,7 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     children: [
+      { path: '', redirectTo: 'firsthome', pathMatch: 'full' },
       { path: 'firsthome', component: FirstaboutComponent },
       { path: 'secondhome', component: SecondaboutComponent },
     ],
@@ -27,6 +28,7 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent,
     children: [
+      { path: '', redirectTo: 'firstabout', pathMatch: 'full' },
       { path: 'firstabout', component: FirsthomeComponent },
       { path: 'secondabout', component: SecondhomeComponent },
     ],
@@ -35,6 +37,7 @@ const routes: Routes = [
     path: 'services',
     component: ServicesComponent,
     children: [
+      { path: '', redirectTo: 'firstservices', pathMatch: 'full' },
       { path: 'firstservices', component: FirstservicesComponent },
       { path: 'secondservices', component: SecondservicesComponent },
     ],
@@ -43,6 +46,7 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
     children: [
+      { path: '', redirectTo: 'firstcontact', pathMatch: 'full' },
       { path: 'firstcontact', component: FirstcontactComponent },
       { path: 'secondcontact', component: SecondcontactComponent },
     ],

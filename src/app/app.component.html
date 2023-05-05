@@ -1,7 +1,11 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-    <span>HamisiApp</span>
+    <mat-icon (click)="sidenav.toggle()" matTooltip="Show or Hide"
+      >menu</mat-icon
+    >
+    <span matTooltip="Welcome to Hamisi's App" matTooltipPosition="after"
+      >HamisiApp</span
+    >
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>

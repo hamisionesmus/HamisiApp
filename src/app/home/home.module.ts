@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
+import { FirstService } from './home/homeservices/first.service';
 
 @NgModule({
   declarations: [HomeComponent, FirstaboutComponent, SecondaboutComponent],
@@ -20,5 +21,6 @@ import { RouterModule } from '@angular/router';
     MatCardModule,
   ],
   exports: [HomeComponent],
+  providers: [FirstService],
 })
 export class HomeModule {}

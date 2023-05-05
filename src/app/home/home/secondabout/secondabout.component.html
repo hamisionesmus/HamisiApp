@@ -1,1 +1,14 @@
-<p>secondabout works!</p>
+<h2>Second Home page</h2>
+<h3>This data is shared using services</h3>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+  </tr>
+  <tr *ngFor="let myInfo of myInfo">
+    <td>{{ myInfo.id }}</td>
+    <td>{{ myInfo.name }}</td>
+    <td>{{ myInfo.gender }}</td>
+  </tr>
+</table>

@@ -1,4 +1,4 @@
-<h3>First Home</h3>
+<h2>First Home page</h2>
 <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
@@ -22,3 +22,17 @@
     <button mat-button>SHARE</button>
   </mat-card-actions>
 </mat-card>
+
+<h3>This data is shared using services</h3>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+  </tr>
+  <tr *ngFor="let myInfo of myInfo">
+    <td>{{ myInfo.id }}</td>
+    <td>{{ myInfo.name }}</td>
+    <td>{{ myInfo.gender }}</td>
+  </tr>
+</table>
